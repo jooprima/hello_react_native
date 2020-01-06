@@ -8,14 +8,9 @@
 
 import React, {Component} from 'react';
 import {View, Text, StatusBar} from 'react-native';
+import Header from './Header';
 
-class Header extends Component {
-  render(){
-    return <Text>Ini adalah Header </Text>;
-  }
-}
-
-export default class App extends Component<props> {
+export default class App extends Component {
   render() {
     return (
       <>
