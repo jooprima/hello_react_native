@@ -9,16 +9,8 @@
 import React, {Component} from 'react';
 import {View, Text, StatusBar} from 'react-native';
 import Header from './Header';
+import Footer from './Footer';
 
-const Footer = () => {
-  var jooprima = '@jooprima';
-  return (
-    <View>
-      <Text>Ini adalah Footer</Text>
-      <Text>{jooprima}</Text>
-    </View>
-  );
-};
 export default class App extends Component {
   render() {
     return (
