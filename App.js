@@ -7,25 +7,24 @@
  */
 
 import React, {Component} from 'react';
-import {
-  SafeAreaView,
-  StyleSheet,
-  ScrollView,
-  View,
-  Text,
-  StatusBar,
-} from 'react-native';
+import {View, Text, StatusBar} from 'react-native';
 
-const App: () => React$Node = () => {
-  return (
-    <>
-      <View>
-        <StatusBar backgroundColor="grey" />
-        <Text>First App!</Text>
-      </View>
-    </>
-  );
-};
+class Header extends Component {
+  render(){
+    return <Text>Ini adalah Header </Text>;
+  }
+}
 
-
-export default App;
+export default class App extends Component<props> {
+  render() {
+    return (
+      <>
+        <View>
+          <StatusBar backgroundColor="grey" />
+          <Header />
+          <Text>First App!</Text>
+        </View>
+      </>
+    );
+  }
+}
