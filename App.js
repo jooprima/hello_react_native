@@ -7,11 +7,24 @@
  */
 
 import React, {Component} from 'react';
-import {View, Text, StatusBar} from 'react-native';
+import {View, Text, StatusBar, Button, Alert} from 'react-native';
 import Header from './Header';
 import Footer from './Footer';
 
 export default class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      jumlah: 0,
+    };
+  }
+
+  handleTambah = () => {
+    this.setState({
+      jumlah: this.state.jumlah + 1,
+    });
+  };
+
   render() {
     return (
       <>
@@ -20,6 +33,8 @@ export default class App extends Component {
           <Header usia="Usia : 28" />
           <Text>First App!</Text>
           <Footer tahun="2020" />
+          <Button title="Button Tambah" onPress={this.handleTambah} />
+          <Text>Jumlah : {this.state.jumlah}</Text>
         </View>
       </>
     );
