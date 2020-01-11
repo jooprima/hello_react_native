@@ -16,10 +16,10 @@ export default class App extends Component {
     return (
       <>
         <View>
-          <StatusBar backgroundColor="grey" />
-          <Header />
+          <StatusBar backgroundColor="blue" />
+          <Header person="ini adalah props person" />
           <Text>First App!</Text>
-          <Footer />
+          <Footer tahun="2020" />
         </View>
       </>
     );

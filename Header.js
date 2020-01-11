@@ -3,7 +3,7 @@ import {Text} from 'react-native';
 
 class Header extends Component {
   render() {
-    return <Text>Ini adalah Header component dalam file terpisah </Text>;
+    return <Text>Ini adalah Header {this.props.person} </Text>;
   }
 }
 
