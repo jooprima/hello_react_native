@@ -17,7 +17,6 @@ export default class App extends Component {
       <>
         <View>
           <StatusBar backgroundColor="blue" />
-          <Header person="Nama : jooprima" />
           <Header usia="Usia : 28" />
           <Text>First App!</Text>
           <Footer tahun="2020" />
